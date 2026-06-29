@@ -9,3 +9,17 @@ Phase 2
 
 1.
 Terraform state files should never be committed to a public repository because they may contain sensitive information such as infrastructure details, resource IDs, IP addresses, and even secrets. Exposing them can create serious security risks.
+
+Phase 3
+
+1. What does the -p 8080:80 flag do?
+
+It maps port 8080 on the host machine to port 80 inside the Docker container, allowing the application to be accessed through http://localhost:8080.
+
+2. Why do we push the image to Docker Hub before deploying to AWS?
+
+Docker Hub acts as a central image registry. The EC2 instance can download the image directly from Docker Hub instead of requiring the image to be built on the server.
+
+3. What is the difference between docker build and docker run?
+
+docker build creates a Docker image from a Dockerfile. docker run starts a container from an existing Docker image.
