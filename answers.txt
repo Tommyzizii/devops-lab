@@ -23,3 +23,17 @@ Docker Hub acts as a central image registry. The EC2 instance can download the i
 3. What is the difference between docker build and docker run?
 
 docker build creates a Docker image from a Dockerfile. docker run starts a container from an existing Docker image.
+
+Phase 4
+
+1. What is the purpose of terraform plan before terraform apply?
+
+terraform plan previews the changes that Terraform will make to your infrastructure without actually creating, modifying, or deleting any resources. It allows you to verify that the configuration is correct before applying it.
+
+2. What does the user_data field do in an EC2 resource?
+
+The user_data field contains a startup script that is automatically executed the first time an EC2 instance boots. It is commonly used to install software, configure the operating system, and deploy applications automatically.
+
+3. Why do we use a data source for the AMI instead of hardcoding an AMI ID?
+
+A Terraform data source retrieves existing information from AWS instead of creating new resources. Using a data source for the AMI ensures Terraform always selects the latest matching Amazon Linux image.
