@@ -4,3 +4,8 @@ Phase 1
 We ignore .terraform/ because it contains downloaded provider plugins that can be recreated.
 
 We ignore *.tfstate because Terraform state files contain information about our infrastructure and may include sensitive data. They should not be committed to GitHub.
+
+Phase 2
+
+1.
+Terraform state files should never be committed to a public repository because they may contain sensitive information such as infrastructure details, resource IDs, IP addresses, and even secrets. Exposing them can create serious security risks.
