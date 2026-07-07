@@ -165,7 +165,3 @@ Diagnosis in both cases followed the same process: reproduce via SSH, check serv
 ## Project Timeline
 
 Completed: June 2026
-
-## License
-
-MIT
